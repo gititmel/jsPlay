@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+		body{
+			margin 	:0px;
+			padding: 0px;
+		}
+
+		#lightbox{
+			width 		:100vw;
+			height 		:100vh; /*100% the height of screen */
+			background 	:rgba(0,0,0,0.8);
+			position 	:fixed;
+			z-index 	:1000; /*make sure that lighbox is on surface*/
+			top 		:0px;
+			left 		:0px;
+			display 	:none; /*hides the lightbox*/
+		}
+
+		#lbcontentArea{
+			width 	 		: 50vw;
+			height 			: 50vh;
+			background 		: rgba(255, 255, 255, 1);
+			border-radius 	: 15px;
+			margin 			: 0 auto; /*this one first*/
+			margin-top 		: 10vh;
+			position 		: relative; /*allows to control the child in an absolute way */
+
+		}
+
+		#closeBtn{
+			width 			:25px;
+			height 			:25px;
+			border-radius 	:50%;
+			background 		:gray;
+			font-weight 	:bold;
+			font-family 	:sans-serif;
+			text-align 		:center;
+			position 		:absolute; 
+			right 			:-30px;
+			top 			:-20px;
+			/*padding-top 	: 3px;
+			padding-bottom 	: 2px;*/
+		}
+
+		#closeBtn:hover{
+			background 	:black;
+			color 		:white;
+		}
+
+		#lbcontent{
+			border 		:solid black 1px;
+			padding 	:5vh;
+		}
+
+</style>
+
+
+
+</head>
+<body>
+<input type="button" id="lightboxTrigger" value="!">
+<div id="lightbox">
+	
+	<div id="lbcontentArea">
+		<div id="closeBtn"> X </div>
+		<div id="lbcontent">
+			LALALALA
+		</div>
+	</div>
+
+</div>
+
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae urna blandit, sollicitudin dui ut, mattis justo. Fusce et facilisis lectus. Fusce laoreet, tellus eget laoreet iaculis, nibh ante hendrerit dolor, in molestie arcu enim a nunc. Nulla at risus ac massa porta feugiat id et urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus turpis, pharetra non suscipit et, mollis at tellus. Fusce vulputate augue ex, ac elementum libero rhoncus quis. Sed convallis fermentum feugiat. Nulla consequat dui in euismod accumsan. Suspendisse sed vehicula arcu. Nulla nec urna sed nunc ultricies condimentum. Suspendisse dignissim nisi a purus feugiat ornare. Nam interdum diam eu consequat volutpat. Aenean ultricies scelerisque enim ut mollis. Aliquam eleifend tempus mattis.
+</p>
+<p>
+	Morbi at tortor consequat, ornare elit a, sodales nibh. Proin tincidunt sed nisl non efficitur. In hac habitasse platea dictumst. Proin et pellentesque neque, vitae bibendum nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras leo ligula, condimentum sed bibendum eu, dignissim vitae lectus. Praesent in congue lacus, at tristique justo. Etiam ornare tincidunt est nec malesuada. Etiam id ligula sed neque fermentum varius. Maecenas a gravida nibh.
+</p>
+<p>
+	Duis pharetra condimentum magna eget egestas. Sed commodo, velit et sagittis dictum, magna leo egestas massa, id hendrerit massa felis quis est. Donec quis malesuada nibh. Suspendisse feugiat felis magna, a consectetur metus efficitur quis. Quisque vestibulum, mauris eu pellentesque cursus, nibh risus facilisis mi, in hendrerit orci felis in nisi. Vestibulum sit amet viverra libero. Duis aliquam eget metus feugiat tincidunt. Donec consectetur massa vitae elit mattis, et auctor libero commodo. Vivamus nec ante rutrum, suscipit nulla eget, bibendum quam.
+</p>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae urna blandit, sollicitudin dui ut, mattis justo. Fusce et facilisis lectus. Fusce laoreet, tellus eget laoreet iaculis, nibh ante hendrerit dolor, in molestie arcu enim a nunc. Nulla at risus ac massa porta feugiat id et urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus turpis, pharetra non suscipit et, mollis at tellus. Fusce vulputate augue ex, ac elementum libero rhoncus quis. Sed convallis fermentum feugiat. Nulla consequat dui in euismod accumsan. Suspendisse sed vehicula arcu. Nulla nec urna sed nunc ultricies condimentum. Suspendisse dignissim nisi a purus feugiat ornare. Nam interdum diam eu consequat volutpat. Aenean ultricies scelerisque enim ut mollis. Aliquam eleifend tempus mattis.
+</p>
+<p>
+	Morbi at tortor consequat, ornare elit a, sodales nibh. Proin tincidunt sed nisl non efficitur. In hac habitasse platea dictumst. Proin et pellentesque neque, vitae bibendum nunc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras leo ligula, condimentum sed bibendum eu, dignissim vitae lectus. Praesent in congue lacus, at tristique justo. Etiam ornare tincidunt est nec malesuada. Etiam id ligula sed neque fermentum varius. Maecenas a gravida nibh.
+</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> <!-- before script bc script requires jQuery-->
+
+	<script src="js/lightbox.js"></script> 
+</body>
+
+
+</html>
